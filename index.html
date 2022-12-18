@@ -2,19 +2,71 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SIGNUPHERE</title>
-		<link rel="stylesheet" href="src/style.css" />
+		<link rel="stylesheet" href="./src/style.css" />
 	</head>
-	<body>
-		<h1 class="text-red-400">hello hope this works</h1>
-		<div class="signup window"></div>
-		<div class="w-screen h-screen flex justify-center items-center">
-			<form
-				id="form"
-				class="w-1/3 h-2/3 bg-slate-400 flex flex-col justify-around items-center"
-			></form>
+
+	<body class="bg-slate-200 bg-gradient-to-tr">
+		<div class="container w-screen h-2/3 bg-indigo-300">
+			<div class="w-screen h-screen flex justify-center items-center">
+				<form
+					id="form"
+					class="w-1/3 h-2/3 shadow-2xl bg-slate-200 flex flex-col items-center rounded-md justify-center"
+				>
+					<fieldset>
+						<h2 class="text-zinc-500 font-serif text-lg gap-4">
+							Sign up with your email
+						</h2>
+						<h5 class="text-zinc-400 text-xs">
+							Already have an account?
+							<span class="text-blue-300">Sign in </span>
+						</h5>
+						<br />
+					</fieldset>
+					<input
+						class="py-2 pl-9 pr-3"
+						type="text"
+						name="first name"
+						placeholder="First name"
+						required
+					/><br />
+					<input
+						class="py-2 pl-9 pr-3"
+						type="text"
+						name="last name"
+						placeholder="Last Name"
+						required
+					/><br />
+					<input
+						class="py-2 pl-9 pr-3"
+						type="e-mail"
+						name="e-mail"
+						placeholder="E-mail address"
+					/><br />
+					<input
+						class="py-2 pl-9 pr-3"
+						type="password"
+						name="password"
+						placeholder="password"
+					/>
+
+					<fieldset>
+						<input type="checkbox" class="p-4" name="" checked />
+						<h4 class="text-xs">
+							I agree to the Terms Of Service and Privacy Policy
+						</h4>
+					</fieldset>
+					<br />
+
+					<button
+						class="py-2 pl-9 pr-3 w-2/3 rounded-md bg-violet-600 text-white text-center"
+					>
+						Submit account
+					</button>
+				</form>
+			</div>
 		</div>
 
 		<script type="module" src="/src/main.ts"></script>
